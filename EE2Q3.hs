@@ -33,7 +33,7 @@ clienteUsando nome refri cliente controle = loop
                     loop
             else if (r >= 1000) then
                 do
-                    printf "O cliente %d do refrigerante %s está enchenco seu copo \n" c nome
+                    printf "O cliente %d do refrigerante %s está enchendo seu copo \n" c nome
                     putMVar cliente (c+1) -- proximo cliente do refrigerante pode vir
                     putMVar refri (r - 300) -- consumiu 300 ml do respectivo refrigerante
                     threadDelay (1000000) -- 1000ms = A funcao recebe em microsegundos
